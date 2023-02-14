@@ -1,6 +1,6 @@
 
 
-/*   Βέλλιος Γεώργιος-Σεραφείμ ΑΕΜ: 9471 velliosg@ece.auth.gr  -- Μανούσος Διαγόρας ΑΕΜ: 9554 dmanouso@ece.auth.gr  */
+/*   Ξ’Ξ­Ξ»Ξ»ΞΉΞΏΟ‚ Ξ“ΞµΟΟΞ³ΞΉΞΏΟ‚-Ξ£ΞµΟΞ±Ο†ΞµΞ―ΞΌ Ξ‘Ξ•Ξ: 9471 velliosg@ece.auth.gr  -- ΞΞ±Ξ½ΞΏΟΟƒΞΏΟ‚ Ξ”ΞΉΞ±Ξ³ΟΟΞ±Ο‚ Ξ‘Ξ•Ξ: 9554 dmanouso@ece.auth.gr  */
 
 
 
@@ -13,47 +13,47 @@
 using namespace std;
 
 
-    /*Γίνεται δήλωση της κλάσης της ψήφου (vote),καθώς και των μεταβλητών και των μεθόδων που περιέχει η κλάση .Καθε ψήφος έχει 2 μεταβλητές (οπότε 2 setters και 2 getters),
- 2 constructors ,με και χωρις ορίσματα, εναν destructor και 1 επιπλέον μεθόδο για εκτύπωση της κλάσης */
+    /*Ξ“Ξ―Ξ½ΞµΟ„Ξ±ΞΉ Ξ΄Ξ®Ξ»Ο‰ΟƒΞ· Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Ο„Ξ·Ο‚ ΟΞ®Ο†ΞΏΟ… (vote),ΞΊΞ±ΞΈΟΟ‚ ΞΊΞ±ΞΉ Ο„Ο‰Ξ½ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„ΟΞ½ ΞΊΞ±ΞΉ Ο„Ο‰Ξ½ ΞΌΞµΞΈΟΞ΄Ο‰Ξ½ Ο€ΞΏΟ… Ο€ΞµΟΞΉΞ­Ο‡ΞµΞΉ Ξ· ΞΊΞ»Ξ¬ΟƒΞ· .ΞΞ±ΞΈΞµ ΟΞ®Ο†ΞΏΟ‚ Ξ­Ο‡ΞµΞΉ 2 ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ­Ο‚ (ΞΏΟ€ΟΟ„Ξµ 2 setters ΞΊΞ±ΞΉ 2 getters),
+ 2 constructors ,ΞΌΞµ ΞΊΞ±ΞΉ Ο‡Ο‰ΟΞΉΟ‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±, ΞµΞ½Ξ±Ξ½ destructor ΞΊΞ±ΞΉ 1 ΞµΟ€ΞΉΟ€Ξ»Ξ­ΞΏΞ½ ΞΌΞµΞΈΟΞ΄ΞΏ Ξ³ΞΉΞ± ΞµΞΊΟ„ΟΟ€Ο‰ΟƒΞ· Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ */
 
 class Vote{
     string voted;
     string reason;
 public:
 
-    /* Constructor της κλάσης Vote χωρίς ορίσματα. Δίνονται τα κενά σύνολά στις μεταβλητές voted και reason */
+    /* Constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Vote Ο‡Ο‰ΟΞ―Ο‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±. Ξ”Ξ―Ξ½ΞΏΞ½Ο„Ξ±ΞΉ Ο„Ξ± ΞΊΞµΞ½Ξ¬ ΟƒΟΞ½ΞΏΞ»Ξ¬ ΟƒΟ„ΞΉΟ‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ­Ο‚ voted ΞΊΞ±ΞΉ reason */
     Vote(){
         voted="";
         reason="";
     }
 
-    /* Constructor της κλάσης Vote με ορίσματα. Έχει ορίσματα Player p,string reason.Στη μεταβλητή voted αποδίδεται το όνομα του player p και
-    στη μεταβλητή reason της κλάσης το όρισμα reason της συνάρτησης*/
+    /* Constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Vote ΞΌΞµ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±. ΞΟ‡ΞµΞΉ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Player p,string reason.Ξ£Ο„Ξ· ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ® voted Ξ±Ο€ΞΏΞ΄Ξ―Ξ΄ΞµΟ„Ξ±ΞΉ Ο„ΞΏ ΟΞ½ΞΏΞΌΞ± Ο„ΞΏΟ… player p ΞΊΞ±ΞΉ
+    ΟƒΟ„Ξ· ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ® reason Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Ο„ΞΏ ΟΟΞΉΟƒΞΌΞ± reason Ο„Ξ·Ο‚ ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ·Ο‚*/
     Vote(Player p, string reason){
         voted=p.getName();
         this->reason=reason;
     }
-    /* Destructor της κλάσης Vote*/
+    /* Destructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Vote*/
     ~Vote(){
        ;
     }
-    /*Setter της μεταβλητής voted με όρισμα string.*/
+    /*Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ voted ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± string.*/
     void setVoted(string voted){
         this->voted=voted;
     }
-    /*Setter της μεταβλητής reason με όρισμα string.*/
+    /*Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ reason ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± string.*/
     void setReason(string reason){
         this->reason=reason;
     }
-    /*Getter της μεταβλητής voted.*/
+    /*Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ voted.*/
     string getVoted(){
         return voted;
     }
-    /*Getter της μεταβλητής reason.*/
+    /*Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ reason.*/
     string getReason(){
         return reason;
     }
-    /*Εκτυπώνει τις μεταβλητές της κλάσης.*/
+    /*Ξ•ΞΊΟ„Ο…Ο€ΟΞ½ΞµΞΉ Ο„ΞΉΟ‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ­Ο‚ Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚.*/
     void status(){
         cout<<"Voted: "<<getVoted()<<endl;
         cout<<"Reason: "<<getReason()<<endl<<endl;

@@ -1,35 +1,35 @@
 
 
 
-/*   Βέλλιος Γεώργιος-Σεραφείμ ΑΕΜ: 9471 velliosg@ece.auth.gr  -- Μανούσος Διαγόρας ΑΕΜ: 9554 dmanouso@ece.auth.gr  */
+/*   Ξ’Ξ­Ξ»Ξ»ΞΉΞΏΟ‚ Ξ“ΞµΟΟΞ³ΞΉΞΏΟ‚-Ξ£ΞµΟΞ±Ο†ΞµΞ―ΞΌ Ξ‘Ξ•Ξ: 9471 velliosg@ece.auth.gr  -- ΞΞ±Ξ½ΞΏΟΟƒΞΏΟ‚ Ξ”ΞΉΞ±Ξ³ΟΟΞ±Ο‚ Ξ‘Ξ•Ξ: 9554 dmanouso@ece.auth.gr  */
 
 #include "TeamCompetition.h"
 
 
 using namespace std;
 
-/* Constructor της κλάσης ΤeamCompetition.Δεν έχει κάποια εντολή,διότι πραγματοποιούνται οι εντολες του constructor χωρίς ορίσματα της κλάσης Competition
- και του constructor χωρίς ορίσματα της κλάσης FoodAward που αρχεικοποιεί την μεταβλητή foodAward με default ορίσματα*/
+/* Constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Ξ¤eamCompetition.Ξ”ΞµΞ½ Ξ­Ο‡ΞµΞΉ ΞΊΞ¬Ο€ΞΏΞΉΞ± ΞµΞ½Ο„ΞΏΞ»Ξ®,Ξ΄ΞΉΟΟ„ΞΉ Ο€ΟΞ±Ξ³ΞΌΞ±Ο„ΞΏΟ€ΞΏΞΉΞΏΟΞ½Ο„Ξ±ΞΉ ΞΏΞΉ ΞµΞ½Ο„ΞΏΞ»ΞµΟ‚ Ο„ΞΏΟ… constructor Ο‡Ο‰ΟΞ―Ο‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Competition
+ ΞΊΞ±ΞΉ Ο„ΞΏΟ… constructor Ο‡Ο‰ΟΞ―Ο‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ FoodAward Ο€ΞΏΟ… Ξ±ΟΟ‡ΞµΞΉΞΊΞΏΟ€ΞΏΞΉΞµΞ― Ο„Ξ·Ξ½ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ® foodAward ΞΌΞµ default ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±*/
 TeamCompetition::TeamCompetition(){
   ;
 }
 
-/* Constructor της κλάσης ΤeamCompetition με ορίσματα int arithmos,string onoma, FoodAward food.Τα δυο πρώτα ορίσματα χρησιμοποιούνται
- και ως ορίσματα του constructor της κλάσης Competition που καλείται απο τον παρόντα constructor.Η τιμή του τρίτου ορίσματος αποδίδεται στη
- μεταβλητή foodAward.*/
+/* Constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Ξ¤eamCompetition ΞΌΞµ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± int arithmos,string onoma, FoodAward food.Ξ¤Ξ± Ξ΄Ο…ΞΏ Ο€ΟΟΟ„Ξ± ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο‡ΟΞ·ΟƒΞΉΞΌΞΏΟ€ΞΏΞΉΞΏΟΞ½Ο„Ξ±ΞΉ
+ ΞΊΞ±ΞΉ Ο‰Ο‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο„ΞΏΟ… constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Competition Ο€ΞΏΟ… ΞΊΞ±Ξ»ΞµΞ―Ο„Ξ±ΞΉ Ξ±Ο€ΞΏ Ο„ΞΏΞ½ Ο€Ξ±ΟΟΞ½Ο„Ξ± constructor.Ξ— Ο„ΞΉΞΌΞ® Ο„ΞΏΟ… Ο„ΟΞ―Ο„ΞΏΟ… ΞΏΟΞ―ΟƒΞΌΞ±Ο„ΞΏΟ‚ Ξ±Ο€ΞΏΞ΄Ξ―Ξ΄ΞµΟ„Ξ±ΞΉ ΟƒΟ„Ξ·
+ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ® foodAward.*/
 
 TeamCompetition::TeamCompetition(int arithmos,string onoma, FoodAward food): Competition(arithmos, onoma){
 foodAward=food;
 
 }
 
-/* Destructor της κλάσης ΤeamCompetition*/
+/* Destructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Ξ¤eamCompetition*/
 TeamCompetition::~TeamCompetition(){
   ;
 }
 
-/*Setter της μεταβλητής rounds[3].Δέχεται δυο ορίσματα, 1 int position,το οποίο είναι η θέση του πίνακα όπου τοποθετείται το δεύτερο
-όρισμα round.Επίσης γίνεται έλεγχος αν η τιμή position είναι αποδεκτή(0-2).    */
+/*Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ rounds[3].Ξ”Ξ­Ο‡ΞµΟ„Ξ±ΞΉ Ξ΄Ο…ΞΏ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±, 1 int position,Ο„ΞΏ ΞΏΟ€ΞΏΞ―ΞΏ ΞµΞ―Ξ½Ξ±ΞΉ Ξ· ΞΈΞ­ΟƒΞ· Ο„ΞΏΟ… Ο€Ξ―Ξ½Ξ±ΞΊΞ± ΟΟ€ΞΏΟ… Ο„ΞΏΟ€ΞΏΞΈΞµΟ„ΞµΞ―Ο„Ξ±ΞΉ Ο„ΞΏ Ξ΄ΞµΟΟ„ΞµΟΞΏ
+ΟΟΞΉΟƒΞΌΞ± round.Ξ•Ο€Ξ―ΟƒΞ·Ο‚ Ξ³Ξ―Ξ½ΞµΟ„Ξ±ΞΉ Ξ­Ξ»ΞµΞ³Ο‡ΞΏΟ‚ Ξ±Ξ½ Ξ· Ο„ΞΉΞΌΞ® position ΞµΞ―Ξ½Ξ±ΞΉ Ξ±Ο€ΞΏΞ΄ΞµΞΊΟ„Ξ®(0-2).    */
 void TeamCompetition::setTeamRounds(int position, Round round){
       if(position<0 || position>2){
         cout<<"Mh apodekti timi"<<endl;
@@ -39,13 +39,13 @@ void TeamCompetition::setTeamRounds(int position, Round round){
       }
 }
 
-/*Getter της μεταβλητής rounds[3]. Επιστρέφει δείκτη στο πρώτο στοιχείο του πίνακα rounds.  */
+/*Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ rounds[3]. Ξ•Ο€ΞΉΟƒΟ„ΟΞ­Ο†ΞµΞΉ Ξ΄ΞµΞ―ΞΊΟ„Ξ· ΟƒΟ„ΞΏ Ο€ΟΟΟ„ΞΏ ΟƒΟ„ΞΏΞΉΟ‡ΞµΞ―ΞΏ Ο„ΞΏΟ… Ο€Ξ―Ξ½Ξ±ΞΊΞ± rounds.  */
 Round* TeamCompetition:: getTeamRounds(){
     return rounds;
 }
 
-/*Εκτυπώνει τις μεταβλητές της κλάσης.Για να γίνει αυτό,καλούνται οι συναρτήσεις status() των κλάσεων Competition και foodAward.
-Επίσης εκτυπώνονται τα στοιχεία των τριών rounds με την εντολή rounds[i].status().  */
+/*Ξ•ΞΊΟ„Ο…Ο€ΟΞ½ΞµΞΉ Ο„ΞΉΟ‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ­Ο‚ Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚.Ξ“ΞΉΞ± Ξ½Ξ± Ξ³Ξ―Ξ½ΞµΞΉ Ξ±Ο…Ο„Ο,ΞΊΞ±Ξ»ΞΏΟΞ½Ο„Ξ±ΞΉ ΞΏΞΉ ΟƒΟ…Ξ½Ξ±ΟΟ„Ξ®ΟƒΞµΞΉΟ‚ status() Ο„Ο‰Ξ½ ΞΊΞ»Ξ¬ΟƒΞµΟ‰Ξ½ Competition ΞΊΞ±ΞΉ foodAward.
+Ξ•Ο€Ξ―ΟƒΞ·Ο‚ ΞµΞΊΟ„Ο…Ο€ΟΞ½ΞΏΞ½Ο„Ξ±ΞΉ Ο„Ξ± ΟƒΟ„ΞΏΞΉΟ‡ΞµΞ―Ξ± Ο„Ο‰Ξ½ Ο„ΟΞΉΟΞ½ rounds ΞΌΞµ Ο„Ξ·Ξ½ ΞµΞ½Ο„ΞΏΞ»Ξ® rounds[i].status().  */
 void TeamCompetition::status(){
     Competition::status();
     foodAward.status();
@@ -53,7 +53,7 @@ void TeamCompetition::status(){
         rounds[i].status();
 }
 
-/*Ο τρόπος λειτουργίας της συνάρτησης compete() θα παρουσιαστεί στην αναφορά */
+/*Ξ Ο„ΟΟΟ€ΞΏΟ‚ Ξ»ΞµΞΉΟ„ΞΏΟ…ΟΞ³Ξ―Ξ±Ο‚ Ο„Ξ·Ο‚ ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ·Ο‚ compete() ΞΈΞ± Ο€Ξ±ΟΞΏΟ…ΟƒΞΉΞ±ΟƒΟ„ΞµΞ― ΟƒΟ„Ξ·Ξ½ Ξ±Ξ½Ξ±Ο†ΞΏΟΞ¬ */
 int TeamCompetition:: compete(Team &team1,Team &team2){
     int wins1=0, wins2=0;
     int numOfRound;

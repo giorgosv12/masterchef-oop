@@ -1,7 +1,7 @@
 
 
 
-/*   Βέλλιος Γεώργιος-Σεραφείμ ΑΕΜ: 9471 velliosg@ece.auth.gr  -- Μανούσος Διαγόρας ΑΕΜ: 9554 dmanouso@ece.auth.gr  */
+/*   Ξ’Ξ­Ξ»Ξ»ΞΉΞΏΟ‚ Ξ“ΞµΟΟΞ³ΞΉΞΏΟ‚-Ξ£ΞµΟΞ±Ο†ΞµΞ―ΞΌ Ξ‘Ξ•Ξ: 9471 velliosg@ece.auth.gr  -- ΞΞ±Ξ½ΞΏΟΟƒΞΏΟ‚ Ξ”ΞΉΞ±Ξ³ΟΟΞ±Ο‚ Ξ‘Ξ•Ξ: 9554 dmanouso@ece.auth.gr  */
 
 #ifndef IMMUNITYCOMPETITION_H_INCLUDED
 #define IMMUNITYCOMPETITION_H_INCLUDED
@@ -12,10 +12,10 @@
 
 using namespace std;
 
-/*Γίνεται δήλωση της παράγωγης κλάσης του διαγωνισμού ασυλίας (ImmunityCompetition) που κληρονομεί τα γνωρίσματα της βασικής κλασης Competition
-καθώς και της επιπλέον μεταβλητής(ImmunityAward immunityAward) και των μεθόδων που περιέχει.
-Το ImmunityCompetition δεν έχει καθόλου setters,καθώς οι υπόλοιποι setters υπάρχουν στην κλάση  Competition.Έχει επίσης 2 constructors,
-  με και χωρις ορίσματα, εναν destructor και 2 επιπλέον μεθόδους (status,compete) */
+/*Ξ“Ξ―Ξ½ΞµΟ„Ξ±ΞΉ Ξ΄Ξ®Ξ»Ο‰ΟƒΞ· Ο„Ξ·Ο‚ Ο€Ξ±ΟΞ¬Ξ³Ο‰Ξ³Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Ο„ΞΏΟ… Ξ΄ΞΉΞ±Ξ³Ο‰Ξ½ΞΉΟƒΞΌΞΏΟ Ξ±ΟƒΟ…Ξ»Ξ―Ξ±Ο‚ (ImmunityCompetition) Ο€ΞΏΟ… ΞΊΞ»Ξ·ΟΞΏΞ½ΞΏΞΌΞµΞ― Ο„Ξ± Ξ³Ξ½Ο‰ΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο„Ξ·Ο‚ Ξ²Ξ±ΟƒΞΉΞΊΞ®Ο‚ ΞΊΞ»Ξ±ΟƒΞ·Ο‚ Competition
+ΞΊΞ±ΞΈΟΟ‚ ΞΊΞ±ΞΉ Ο„Ξ·Ο‚ ΞµΟ€ΞΉΟ€Ξ»Ξ­ΞΏΞ½ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚(ImmunityAward immunityAward) ΞΊΞ±ΞΉ Ο„Ο‰Ξ½ ΞΌΞµΞΈΟΞ΄Ο‰Ξ½ Ο€ΞΏΟ… Ο€ΞµΟΞΉΞ­Ο‡ΞµΞΉ.
+Ξ¤ΞΏ ImmunityCompetition Ξ΄ΞµΞ½ Ξ­Ο‡ΞµΞΉ ΞΊΞ±ΞΈΟΞ»ΞΏΟ… setters,ΞΊΞ±ΞΈΟΟ‚ ΞΏΞΉ Ο…Ο€ΟΞ»ΞΏΞΉΟ€ΞΏΞΉ setters Ο…Ο€Ξ¬ΟΟ‡ΞΏΟ…Ξ½ ΟƒΟ„Ξ·Ξ½ ΞΊΞ»Ξ¬ΟƒΞ·  Competition.ΞΟ‡ΞµΞΉ ΞµΟ€Ξ―ΟƒΞ·Ο‚ 2 constructors,
+  ΞΌΞµ ΞΊΞ±ΞΉ Ο‡Ο‰ΟΞΉΟ‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±, ΞµΞ½Ξ±Ξ½ destructor ΞΊΞ±ΞΉ 2 ΞµΟ€ΞΉΟ€Ξ»Ξ­ΞΏΞ½ ΞΌΞµΞΈΟΞ΄ΞΏΟ…Ο‚ (status,compete) */
 
 
 class ImmunityCompetition: public Competition{

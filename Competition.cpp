@@ -1,13 +1,13 @@
 
 
 
-/*   Βέλλιος Γεώργιος-Σεραφείμ ΑΕΜ: 9471 velliosg@ece.auth.gr  -- Μανούσος Διαγόρας ΑΕΜ: 9554 dmanouso@ece.auth.gr  */
+/*   Ξ’Ξ­Ξ»Ξ»ΞΉΞΏΟ‚ Ξ“ΞµΟΟΞ³ΞΉΞΏΟ‚-Ξ£ΞµΟΞ±Ο†ΞµΞ―ΞΌ Ξ‘Ξ•Ξ: 9471 velliosg@ece.auth.gr  -- ΞΞ±Ξ½ΞΏΟΟƒΞΏΟ‚ Ξ”ΞΉΞ±Ξ³ΟΟΞ±Ο‚ Ξ‘Ξ•Ξ: 9554 dmanouso@ece.auth.gr  */
 
 #include "Competition.h"
 
 using namespace std;
 
-/* Constructor της κλάσης Competition χωρίς ορίσματα. Δίνονται οι default τιμές 0 στη μεταβλητή id και κενό σύνολο στις μεταβλητές name και winner */
+/* Constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Competition Ο‡Ο‰ΟΞ―Ο‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±. Ξ”Ξ―Ξ½ΞΏΞ½Ο„Ξ±ΞΉ ΞΏΞΉ default Ο„ΞΉΞΌΞ­Ο‚ 0 ΟƒΟ„Ξ· ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ® id ΞΊΞ±ΞΉ ΞΊΞµΞ½Ο ΟƒΟΞ½ΞΏΞ»ΞΏ ΟƒΟ„ΞΉΟ‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ­Ο‚ name ΞΊΞ±ΞΉ winner */
 Competition::Competition(){
     id=0;
     name="";
@@ -15,8 +15,8 @@ Competition::Competition(){
 }
 
 
-/* Constructor της κλάσης Competition με ορίσματα. Έχει ορίσματα τα int arithmos,string onoma,string nikitis τα οποια αποδίδονται
-   στις μεταβλητές id, name,winner της κλάσης αντίστοιχα. Στην δήλωση του constructor στο .h αρχειο εχει αποδοθεί κατά default το κενό σύνολο στον winnner.  */
+/* Constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Competition ΞΌΞµ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±. ΞΟ‡ΞµΞΉ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο„Ξ± int arithmos,string onoma,string nikitis Ο„Ξ± ΞΏΟ€ΞΏΞΉΞ± Ξ±Ο€ΞΏΞ΄Ξ―Ξ΄ΞΏΞ½Ο„Ξ±ΞΉ
+   ΟƒΟ„ΞΉΟ‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ­Ο‚ id, name,winner Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Ξ±Ξ½Ο„Ξ―ΟƒΟ„ΞΏΞΉΟ‡Ξ±. Ξ£Ο„Ξ·Ξ½ Ξ΄Ξ®Ξ»Ο‰ΟƒΞ· Ο„ΞΏΟ… constructor ΟƒΟ„ΞΏ .h Ξ±ΟΟ‡ΞµΞΉΞΏ ΞµΟ‡ΞµΞΉ Ξ±Ο€ΞΏΞ΄ΞΏΞΈΞµΞ― ΞΊΞ±Ο„Ξ¬ default Ο„ΞΏ ΞΊΞµΞ½Ο ΟƒΟΞ½ΞΏΞ»ΞΏ ΟƒΟ„ΞΏΞ½ winnner.  */
 Competition::Competition(int arithmos,string onoma,string nikitis){
     id=arithmos;
     name=onoma;
@@ -24,43 +24,43 @@ Competition::Competition(int arithmos,string onoma,string nikitis){
 
 }
 
-/* Destructor της κλάσης Competition*/
+/* Destructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Competition*/
 Competition::~Competition(){
 //cout<<"Competition with id: "<<id<<" was destroyed"<<endl;
 }
 
-/*Setter της μεταβλητής id με όρισμα int.*/
+/*Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ id ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± int.*/
 void Competition::setId(int a){
     id=a;
 }
 
-/*Setter της μεταβλητής name με όρισμα string.*/
+/*Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ name ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± string.*/
  void Competition::setName(string b){
     name=b;
 }
 
-/*Setter της μεταβλητής winner με όρισμα string.*/
+/*Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ winner ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± string.*/
  void Competition::setWinner(string c){
     winner=c;
 }
 
-/*Getter της μεταβλητής id.*/
+/*Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ id.*/
 int Competition::getId(){
 return id;
 }
 
-/*Getter της μεταβλητής name.*/
+/*Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ name.*/
 string Competition::getName(){
 return name;
 }
 
 
-/*Getter της μεταβλητής winner.*/
+/*Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ winner.*/
 string Competition::getWinner(){
 return winner;
 }
 
-/*Εκτυπώνει τις μεταβλητές της κλάσης.*/
+/*Ξ•ΞΊΟ„Ο…Ο€ΟΞ½ΞµΞΉ Ο„ΞΉΟ‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ­Ο‚ Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚.*/
 void Competition::status(){
     cout<<"Id: "<<id<<endl;
     cout<<"Name: "<<name<<endl;

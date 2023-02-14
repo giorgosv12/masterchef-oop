@@ -1,7 +1,7 @@
 
 
 
-/*   Βέλλιος Γεώργιος-Σεραφείμ ΑΕΜ: 9471 velliosg@ece.auth.gr  -- Μανούσος Διαγόρας ΑΕΜ: 9554 dmanouso@ece.auth.gr  */
+/*   Ξ’Ξ­Ξ»Ξ»ΞΉΞΏΟ‚ Ξ“ΞµΟΟΞ³ΞΉΞΏΟ‚-Ξ£ΞµΟΞ±Ο†ΞµΞ―ΞΌ Ξ‘Ξ•Ξ: 9471 velliosg@ece.auth.gr  -- ΞΞ±Ξ½ΞΏΟΟƒΞΏΟ‚ Ξ”ΞΉΞ±Ξ³ΟΟΞ±Ο‚ Ξ‘Ξ•Ξ: 9554 dmanouso@ece.auth.gr  */
 
 
 
@@ -9,12 +9,12 @@
 #include <cstdlib>
 using namespace std;
 
-/*Γίνεται αρχικοποίηση του static διανύσματος vector votes */
+/*Ξ“Ξ―Ξ½ΞµΟ„Ξ±ΞΉ Ξ±ΟΟ‡ΞΉΞΊΞΏΟ€ΞΏΞ―Ξ·ΟƒΞ· Ο„ΞΏΟ… static Ξ΄ΞΉΞ±Ξ½ΟΟƒΞΌΞ±Ο„ΞΏΟ‚ vector votes */
 vector<Vote> Voting::votes;
-/*Γίνεται αρχικοποίηση της static δυναμικής δομής map results */
+/*Ξ“Ξ―Ξ½ΞµΟ„Ξ±ΞΉ Ξ±ΟΟ‡ΞΉΞΊΞΏΟ€ΞΏΞ―Ξ·ΟƒΞ· Ο„Ξ·Ο‚ static Ξ΄Ο…Ξ½Ξ±ΞΌΞΉΞΊΞ®Ο‚ Ξ΄ΞΏΞΌΞ®Ο‚ map results */
 map<string, int> Voting::results;
 
-/*Ο τρόπος λειτουργίας της συνάρτησης votingProcess() θα παρουσιαστεί στην αναφορά */
+/*Ξ Ο„ΟΟΟ€ΞΏΟ‚ Ξ»ΞµΞΉΟ„ΞΏΟ…ΟΞ³Ξ―Ξ±Ο‚ Ο„Ξ·Ο‚ ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ·Ο‚ votingProcess() ΞΈΞ± Ο€Ξ±ΟΞΏΟ…ΟƒΞΉΞ±ΟƒΟ„ΞµΞ― ΟƒΟ„Ξ·Ξ½ Ξ±Ξ½Ξ±Ο†ΞΏΟΞ¬ */
  void Voting::votingProcess(Team &team){
     int random;
     int ptexniki, pdimofilia, pkourasi, psyndyasmos;
@@ -56,10 +56,10 @@ if(team.getNumberOfPlayers() != 2){
                             //cout<<"syndyasmos"<<k;
                        }
 
-                    }//endif υπολογισμός των στατιστικών των παικτών που υπάρχουν με περιορισούς
+                    }//endif Ο…Ο€ΞΏΞ»ΞΏΞ³ΞΉΟƒΞΌΟΟ‚ Ο„Ο‰Ξ½ ΟƒΟ„Ξ±Ο„ΞΉΟƒΟ„ΞΉΞΊΟΞ½ Ο„Ο‰Ξ½ Ο€Ξ±ΞΉΞΊΟ„ΟΞ½ Ο€ΞΏΟ… Ο…Ο€Ξ¬ΟΟ‡ΞΏΟ…Ξ½ ΞΌΞµ Ο€ΞµΟΞΉΞΏΟΞΉΟƒΞΏΟΟ‚
 
                    // cout<<k<<endl;
-                }//endfor εύρεση ποσοστών για ψήφο
+                }//endfor ΞµΟΟΞµΟƒΞ· Ο€ΞΏΟƒΞΏΟƒΟ„ΟΞ½ Ξ³ΞΉΞ± ΟΞ®Ο†ΞΏ
                 random=rand()%4;
                 Vote vote;
                 switch(random){
@@ -81,16 +81,16 @@ if(team.getNumberOfPlayers() != 2){
                 break;
             default:
                 break;
-                }//end switch με ποιο κριτήριο θα αποφασίσει ο παίκτης
+                }//end switch ΞΌΞµ Ο€ΞΏΞΉΞΏ ΞΊΟΞΉΟ„Ξ®ΟΞΉΞΏ ΞΈΞ± Ξ±Ο€ΞΏΟ†Ξ±ΟƒΞ―ΟƒΞµΞΉ ΞΏ Ο€Ξ±Ξ―ΞΊΟ„Ξ·Ο‚
                 Voting::votes.push_back(vote);
 
-           } //endfor για το πόσες φορές θα ψηφίσει ο κάθε παίκτης
+           } //endfor Ξ³ΞΉΞ± Ο„ΞΏ Ο€ΟΟƒΞµΟ‚ Ο†ΞΏΟΞ­Ο‚ ΞΈΞ± ΟΞ·Ο†Ξ―ΟƒΞµΞΉ ΞΏ ΞΊΞ¬ΞΈΞµ Ο€Ξ±Ξ―ΞΊΟ„Ξ·Ο‚
 
-        }// endif για το αν υπάρχει ο παίκτης
+        }// endif Ξ³ΞΉΞ± Ο„ΞΏ Ξ±Ξ½ Ο…Ο€Ξ¬ΟΟ‡ΞµΞΉ ΞΏ Ο€Ξ±Ξ―ΞΊΟ„Ξ·Ο‚
 
-      }// endfor για το αν ψήφισαν όλοι οι παίκτες
+      }// endfor Ξ³ΞΉΞ± Ο„ΞΏ Ξ±Ξ½ ΟΞ®Ο†ΞΉΟƒΞ±Ξ½ ΟΞ»ΞΏΞΉ ΞΏΞΉ Ο€Ξ±Ξ―ΞΊΟ„ΞµΟ‚
 
-    }//end if της ακραιας συνθήκης που έχουμε 2 παίκτες
+    }//end if Ο„Ξ·Ο‚ Ξ±ΞΊΟΞ±ΞΉΞ±Ο‚ ΟƒΟ…Ξ½ΞΈΞ®ΞΊΞ·Ο‚ Ο€ΞΏΟ… Ξ­Ο‡ΞΏΟ…ΞΌΞµ 2 Ο€Ξ±Ξ―ΞΊΟ„ΞµΟ‚
     else{
         for(int a=0; a<11; a++){
             if(team.getPlayers()[a].getAge() != 0 && team.getPlayers()[a].getImmunity()==false){
@@ -119,7 +119,7 @@ if(team.getNumberOfPlayers() != 2){
         }
 
         pv++;
-    }//end while, μετρηθηκαν ολοι οι ψήφοι
+    }//end while, ΞΌΞµΟ„ΟΞ·ΞΈΞ·ΞΊΞ±Ξ½ ΞΏΞ»ΞΏΞΉ ΞΏΞΉ ΟΞ®Ο†ΞΏΞΉ
 
     pm=results.begin();
     cout<<"\t\tResults:\n";
@@ -199,11 +199,11 @@ if(team.getNumberOfPlayers() != 2){
             break;
         }
     }
-    Voting::votes.clear();  //καθαρίζεται το διάνυσμα votes
-    Voting::results.clear(); // καθαρίζεται η δυναμική δομή results
+    Voting::votes.clear();  //ΞΊΞ±ΞΈΞ±ΟΞ―Ξ¶ΞµΟ„Ξ±ΞΉ Ο„ΞΏ Ξ΄ΞΉΞ¬Ξ½Ο…ΟƒΞΌΞ± votes
+    Voting::results.clear(); // ΞΊΞ±ΞΈΞ±ΟΞ―Ξ¶ΞµΟ„Ξ±ΞΉ Ξ· Ξ΄Ο…Ξ½Ξ±ΞΌΞΉΞΊΞ® Ξ΄ΞΏΞΌΞ® results
     for( int i=0; i<11; i++){
         if( team.getPlayers()[i].getAge() !=0 && team.getPlayers()[i].getImmunity()==true)
             team.getPlayers()[i].setImmunity(false);
     }
 
-}//end συνάρτηση
+}//end ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ·

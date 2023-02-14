@@ -1,8 +1,8 @@
 
 
 
-/*   Βέλλιος Γεώργιος-Σεραφείμ ΑΕΜ: 9471 velliosg@ece.auth.gr  -- Μανούσος Διαγόρας ΑΕΜ: 9554 dmanouso@ece.auth.gr
-     Ο τρόπος λειτουργίας της main περιγράφεται στην αναφορά */
+/*   Ξ’Ξ­Ξ»Ξ»ΞΉΞΏΟ‚ Ξ“ΞµΟΟΞ³ΞΉΞΏΟ‚-Ξ£ΞµΟΞ±Ο†ΞµΞ―ΞΌ Ξ‘Ξ•Ξ: 9471 velliosg@ece.auth.gr  -- ΞΞ±Ξ½ΞΏΟΟƒΞΏΟ‚ Ξ”ΞΉΞ±Ξ³ΟΟΞ±Ο‚ Ξ‘Ξ•Ξ: 9554 dmanouso@ece.auth.gr
+     Ξ Ο„ΟΟΟ€ΞΏΟ‚ Ξ»ΞµΞΉΟ„ΞΏΟ…ΟΞ³Ξ―Ξ±Ο‚ Ο„Ξ·Ο‚ main Ο€ΞµΟΞΉΞ³ΟΞ¬Ο†ΞµΟ„Ξ±ΞΉ ΟƒΟ„Ξ·Ξ½ Ξ±Ξ½Ξ±Ο†ΞΏΟΞ¬ */
 
 #include "Player.h"
 #include"Team.h"
@@ -47,19 +47,19 @@ int main(){
                }
             else
                 ;
-        break; //της case 1 της κθριας switch
+        break; //Ο„Ξ·Ο‚ case 1 Ο„Ξ·Ο‚ ΞΊΞΈΟΞΉΞ±Ο‚ switch
 
         case 2:
             ektiposiOmadas();
-        break; //της case 2 της κυρισς switch
+        break; //Ο„Ξ·Ο‚ case 2 Ο„Ξ·Ο‚ ΞΊΟ…ΟΞΉΟƒΟ‚ switch
 
         case 3:
             ektiposiPaikti();
-        break;   // της case 3 της κύριας switch
+        break;   // Ο„Ξ·Ο‚ case 3 Ο„Ξ·Ο‚ ΞΊΟΟΞΉΞ±Ο‚ switch
 
         case 4:
             cout<<"Antio"<<endl<<endl;
-        break;  // της case 4 της κύριας switch
+        break;  // Ο„Ξ·Ο‚ case 4 Ο„Ξ·Ο‚ ΞΊΟΟΞΉΞ±Ο‚ switch
         default:
             cout<<"La8os Epilogi"<<endl<<endl;
         break;
@@ -67,7 +67,7 @@ int main(){
         }
 
 
-      }while(choice1!=4); //τελειώνει η do while
+      }while(choice1!=4); //Ο„ΞµΞ»ΞµΞΉΟΞ½ΞµΞΉ Ξ· do while
 
 
 
@@ -82,7 +82,7 @@ int main(){
         player3.showPlayer();
         Team team1("Kokkino");
         cout<<"Team Kokkino"<<endl;
-        team1.showTeam();               //δεν εμφανιζει παικτες γιατι ειναι κενοι
+        team1.showTeam();               //Ξ΄ΞµΞ½ ΞµΞΌΟ†Ξ±Ξ½ΞΉΞ¶ΞµΞΉ Ο€Ξ±ΞΉΞΊΟ„ΞµΟ‚ Ξ³ΞΉΞ±Ο„ΞΉ ΞµΞΉΞ½Ξ±ΞΉ ΞΊΞµΞ½ΞΏΞΉ
         Team team2("Portokali", 3);
         cout<<"Team Portokali"<<endl;
         team2.showTeam();

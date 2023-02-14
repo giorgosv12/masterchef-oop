@@ -1,7 +1,7 @@
 
 
 
-/*   Βέλλιος Γεώργιος-Σεραφείμ ΑΕΜ: 9471 velliosg@ece.auth.gr  -- Μανούσος Διαγόρας ΑΕΜ: 9554 dmanouso@ece.auth.gr  */
+/*   Ξ’Ξ­Ξ»Ξ»ΞΉΞΏΟ‚ Ξ“ΞµΟΟΞ³ΞΉΞΏΟ‚-Ξ£ΞµΟΞ±Ο†ΞµΞ―ΞΌ Ξ‘Ξ•Ξ: 9471 velliosg@ece.auth.gr  -- ΞΞ±Ξ½ΞΏΟΟƒΞΏΟ‚ Ξ”ΞΉΞ±Ξ³ΟΟΞ±Ο‚ Ξ‘Ξ•Ξ: 9554 dmanouso@ece.auth.gr  */
 
 #ifndef CREATIVITYCOMPETITION_H_INCLUDED
 #define CREATIVITYCOMPETITION_H_INCLUDED
@@ -12,10 +12,10 @@
 
 using namespace std;
 
-/*Γίνεται δήλωση της παράγωγης κλάσης του διαγωνισμού δημιουργικότητας (CreativityCompetition) που κληρονομεί τα γνωρίσματα της βασικής κλασης Competition
-καθώς και των επιπλέον μεταβλητών(ExcursionAward excursionAward και string ingredients[10]) και των μεθόδων που περιέχει.
-Το CreativityCompetition έχει 1 setter για τον πίνακα ingredients[10]  ,καθώς οι υπόλοιποι setters υπάρχουν στην κλάση  Competition.Έχει επίσης 2 constructors,
-  με και χωρις ορίσματα, έναν destructor και 2 επιπλέον μεθόδους (status,compete) */
+/*Ξ“Ξ―Ξ½ΞµΟ„Ξ±ΞΉ Ξ΄Ξ®Ξ»Ο‰ΟƒΞ· Ο„Ξ·Ο‚ Ο€Ξ±ΟΞ¬Ξ³Ο‰Ξ³Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Ο„ΞΏΟ… Ξ΄ΞΉΞ±Ξ³Ο‰Ξ½ΞΉΟƒΞΌΞΏΟ Ξ΄Ξ·ΞΌΞΉΞΏΟ…ΟΞ³ΞΉΞΊΟΟ„Ξ·Ο„Ξ±Ο‚ (CreativityCompetition) Ο€ΞΏΟ… ΞΊΞ»Ξ·ΟΞΏΞ½ΞΏΞΌΞµΞ― Ο„Ξ± Ξ³Ξ½Ο‰ΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο„Ξ·Ο‚ Ξ²Ξ±ΟƒΞΉΞΊΞ®Ο‚ ΞΊΞ»Ξ±ΟƒΞ·Ο‚ Competition
+ΞΊΞ±ΞΈΟΟ‚ ΞΊΞ±ΞΉ Ο„Ο‰Ξ½ ΞµΟ€ΞΉΟ€Ξ»Ξ­ΞΏΞ½ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„ΟΞ½(ExcursionAward excursionAward ΞΊΞ±ΞΉ string ingredients[10]) ΞΊΞ±ΞΉ Ο„Ο‰Ξ½ ΞΌΞµΞΈΟΞ΄Ο‰Ξ½ Ο€ΞΏΟ… Ο€ΞµΟΞΉΞ­Ο‡ΞµΞΉ.
+Ξ¤ΞΏ CreativityCompetition Ξ­Ο‡ΞµΞΉ 1 setter Ξ³ΞΉΞ± Ο„ΞΏΞ½ Ο€Ξ―Ξ½Ξ±ΞΊΞ± ingredients[10]  ,ΞΊΞ±ΞΈΟΟ‚ ΞΏΞΉ Ο…Ο€ΟΞ»ΞΏΞΉΟ€ΞΏΞΉ setters Ο…Ο€Ξ¬ΟΟ‡ΞΏΟ…Ξ½ ΟƒΟ„Ξ·Ξ½ ΞΊΞ»Ξ¬ΟƒΞ·  Competition.ΞΟ‡ΞµΞΉ ΞµΟ€Ξ―ΟƒΞ·Ο‚ 2 constructors,
+  ΞΌΞµ ΞΊΞ±ΞΉ Ο‡Ο‰ΟΞΉΟ‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±, Ξ­Ξ½Ξ±Ξ½ destructor ΞΊΞ±ΞΉ 2 ΞµΟ€ΞΉΟ€Ξ»Ξ­ΞΏΞ½ ΞΌΞµΞΈΟΞ΄ΞΏΟ…Ο‚ (status,compete) */
 
 
 class CreativityCompetition: public Competition{

@@ -1,14 +1,14 @@
 
 
 
-/*   Βέλλιος Γεώργιος-Σεραφείμ ΑΕΜ: 9471 velliosg@ece.auth.gr  -- Μανούσος Διαγόρας ΑΕΜ: 9554 dmanouso@ece.auth.gr  */
+/*   Ξ’Ξ­Ξ»Ξ»ΞΉΞΏΟ‚ Ξ“ΞµΟΟΞ³ΞΉΞΏΟ‚-Ξ£ΞµΟΞ±Ο†ΞµΞ―ΞΌ Ξ‘Ξ•Ξ: 9471 velliosg@ece.auth.gr  -- ΞΞ±Ξ½ΞΏΟΟƒΞΏΟ‚ Ξ”ΞΉΞ±Ξ³ΟΟΞ±Ο‚ Ξ‘Ξ•Ξ: 9554 dmanouso@ece.auth.gr  */
 
 #include "Player.h"
 
 using namespace std;
-/*Constructor της κλάσης Player χωρίς ορίσματα. Τα string (name, gender, job) αφήνονται κενά, τα int( age, wins) παίρνουν τις τιμές 18 και 0 αντίστιχα
-  , το technicalTraining παίρνει ένα τυχαίο ποσοστό float πο 0 έως 80 (με χρήση του τύπου (max - min)*rand()/RAND_MAX + min που δίνει ενα τυχαίο αριθμό μεταξύ του min και του max )
-  ο οποίος θα χρησιμοποιηθεί πολλές φορές σε επόμενες συναρτήσεις (και για αυτό δεν θα του γίνει παλι αναφρά ), η κούραση γίνεται 0 και η δημοφιλία 50   */
+/*Constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Player Ο‡Ο‰ΟΞ―Ο‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±. Ξ¤Ξ± string (name, gender, job) Ξ±Ο†Ξ®Ξ½ΞΏΞ½Ο„Ξ±ΞΉ ΞΊΞµΞ½Ξ¬, Ο„Ξ± int( age, wins) Ο€Ξ±Ξ―ΟΞ½ΞΏΟ…Ξ½ Ο„ΞΉΟ‚ Ο„ΞΉΞΌΞ­Ο‚ 18 ΞΊΞ±ΞΉ 0 Ξ±Ξ½Ο„Ξ―ΟƒΟ„ΞΉΟ‡Ξ±
+  , Ο„ΞΏ technicalTraining Ο€Ξ±Ξ―ΟΞ½ΞµΞΉ Ξ­Ξ½Ξ± Ο„Ο…Ο‡Ξ±Ξ―ΞΏ Ο€ΞΏΟƒΞΏΟƒΟ„Ο float Ο€ΞΏ 0 Ξ­Ο‰Ο‚ 80 (ΞΌΞµ Ο‡ΟΞ®ΟƒΞ· Ο„ΞΏΟ… Ο„ΟΟ€ΞΏΟ… (max - min)*rand()/RAND_MAX + min Ο€ΞΏΟ… Ξ΄Ξ―Ξ½ΞµΞΉ ΞµΞ½Ξ± Ο„Ο…Ο‡Ξ±Ξ―ΞΏ Ξ±ΟΞΉΞΈΞΌΟ ΞΌΞµΟ„Ξ±ΞΎΟ Ο„ΞΏΟ… min ΞΊΞ±ΞΉ Ο„ΞΏΟ… max )
+  ΞΏ ΞΏΟ€ΞΏΞ―ΞΏΟ‚ ΞΈΞ± Ο‡ΟΞ·ΟƒΞΉΞΌΞΏΟ€ΞΏΞΉΞ·ΞΈΞµΞ― Ο€ΞΏΞ»Ξ»Ξ­Ο‚ Ο†ΞΏΟΞ­Ο‚ ΟƒΞµ ΞµΟ€ΟΞΌΞµΞ½ΞµΟ‚ ΟƒΟ…Ξ½Ξ±ΟΟ„Ξ®ΟƒΞµΞΉΟ‚ (ΞΊΞ±ΞΉ Ξ³ΞΉΞ± Ξ±Ο…Ο„Ο Ξ΄ΞµΞ½ ΞΈΞ± Ο„ΞΏΟ… Ξ³Ξ―Ξ½ΞµΞΉ Ο€Ξ±Ξ»ΞΉ Ξ±Ξ½Ξ±Ο†ΟΞ¬ ), Ξ· ΞΊΞΏΟΟΞ±ΟƒΞ· Ξ³Ξ―Ξ½ΞµΟ„Ξ±ΞΉ 0 ΞΊΞ±ΞΉ Ξ· Ξ΄Ξ·ΞΌΞΏΟ†ΞΉΞ»Ξ―Ξ± 50   */
 Player::Player(){
      //cout<<"Dimiourgia default Paikti"<<endl;
      name="";
@@ -21,8 +21,8 @@ Player::Player(){
      wins=0;
 }
 
-/* Constructor της κλάσης Player με ορίσματα. Έχει ορίσματα τα string onoma, string filo, int ilikia, string epaggelma, int nikes οι οποιες αποδίδονται
-   στις μεταβλητές name, gender, age, job, wins της κλάσης αντίστοιχα. Στην δήλωση του constructor στο .h αρχειο εχει αποδοθεί κατά default η τιμή 0 στις νίκες  */
+/* Constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Player ΞΌΞµ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±. ΞΟ‡ΞµΞΉ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο„Ξ± string onoma, string filo, int ilikia, string epaggelma, int nikes ΞΏΞΉ ΞΏΟ€ΞΏΞΉΞµΟ‚ Ξ±Ο€ΞΏΞ΄Ξ―Ξ΄ΞΏΞ½Ο„Ξ±ΞΉ
+   ΟƒΟ„ΞΉΟ‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ­Ο‚ name, gender, age, job, wins Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Ξ±Ξ½Ο„Ξ―ΟƒΟ„ΞΏΞΉΟ‡Ξ±. Ξ£Ο„Ξ·Ξ½ Ξ΄Ξ®Ξ»Ο‰ΟƒΞ· Ο„ΞΏΟ… constructor ΟƒΟ„ΞΏ .h Ξ±ΟΟ‡ΞµΞΉΞΏ ΞµΟ‡ΞµΞΉ Ξ±Ο€ΞΏΞ΄ΞΏΞΈΞµΞ― ΞΊΞ±Ο„Ξ¬ default Ξ· Ο„ΞΉΞΌΞ® 0 ΟƒΟ„ΞΉΟ‚ Ξ½Ξ―ΞΊΞµΟ‚  */
 Player::Player(string onoma, string filo, int ilikia, string epaggelma, int nikes){
      name=onoma;
     // cout<<"Dimiourgia tou Paikti "<<onoma<<endl;
@@ -35,29 +35,29 @@ Player::Player(string onoma, string filo, int ilikia, string epaggelma, int nike
      wins=nikes;
 }
 
-/* Destructor της κλάσης Player */
+/* Destructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Player */
 Player::~Player(){
     //cout<<"O paiktis "<<name<<" katastrafike "<< endl;
 }
 
- /*  Όταν καλείται η συνάρτηση work() σημαίνει ότι ο παίκτης εξασκείται. Η συνάρτηση αυξάνει απόλυτα την κούραση (exhaustion) του παίκτη κατά ένα τυχαίο ποσοστό 20 με 40 % */
+ /*  ΞΟ„Ξ±Ξ½ ΞΊΞ±Ξ»ΞµΞ―Ο„Ξ±ΞΉ Ξ· ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ· work() ΟƒΞ·ΞΌΞ±Ξ―Ξ½ΞµΞΉ ΟΟ„ΞΉ ΞΏ Ο€Ξ±Ξ―ΞΊΟ„Ξ·Ο‚ ΞµΞΎΞ±ΟƒΞΊΞµΞ―Ο„Ξ±ΞΉ. Ξ— ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ· Ξ±Ο…ΞΎΞ¬Ξ½ΞµΞΉ Ξ±Ο€ΟΞ»Ο…Ο„Ξ± Ο„Ξ·Ξ½ ΞΊΞΏΟΟΞ±ΟƒΞ· (exhaustion) Ο„ΞΏΟ… Ο€Ξ±Ξ―ΞΊΟ„Ξ· ΞΊΞ±Ο„Ξ¬ Ξ­Ξ½Ξ± Ο„Ο…Ο‡Ξ±Ξ―ΞΏ Ο€ΞΏΟƒΞΏΟƒΟ„Ο 20 ΞΌΞµ 40 % */
 void Player::work(){
     exhaustion+= ((40.0 - 20.0 )*(double)rand()/RAND_MAX + 20.0);
 }
 
- /*  Όταν καλείται η συνάρτηση σημαίνει ότι ο παίκτης κοιμάται. Η συνάρτηση μηδενίζει την κούραση (exhaustion) του παίκτη  */
+ /*  ΞΟ„Ξ±Ξ½ ΞΊΞ±Ξ»ΞµΞ―Ο„Ξ±ΞΉ Ξ· ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ· ΟƒΞ·ΞΌΞ±Ξ―Ξ½ΞµΞΉ ΟΟ„ΞΉ ΞΏ Ο€Ξ±Ξ―ΞΊΟ„Ξ·Ο‚ ΞΊΞΏΞΉΞΌΞ¬Ο„Ξ±ΞΉ. Ξ— ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ· ΞΌΞ·Ξ΄ΞµΞ½Ξ―Ξ¶ΞµΞΉ Ο„Ξ·Ξ½ ΞΊΞΏΟΟΞ±ΟƒΞ· (exhaustion) Ο„ΞΏΟ… Ο€Ξ±Ξ―ΞΊΟ„Ξ·  */
 void Player::sleep(){
      exhaustion=0.0;
 }
 
- /*  Όταν καλείται η συνάρτηση communicate() σημαίνει πως ο παίκτης ήρθε σε επαφή με άλλον παίκτη και η δημοφιλία του (popularity) μεταβλήθηκε κατά -10% έως +10% ποσοστιαία */
+ /*  ΞΟ„Ξ±Ξ½ ΞΊΞ±Ξ»ΞµΞ―Ο„Ξ±ΞΉ Ξ· ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ· communicate() ΟƒΞ·ΞΌΞ±Ξ―Ξ½ΞµΞΉ Ο€Ο‰Ο‚ ΞΏ Ο€Ξ±Ξ―ΞΊΟ„Ξ·Ο‚ Ξ®ΟΞΈΞµ ΟƒΞµ ΞµΟ€Ξ±Ο†Ξ® ΞΌΞµ Ξ¬Ξ»Ξ»ΞΏΞ½ Ο€Ξ±Ξ―ΞΊΟ„Ξ· ΞΊΞ±ΞΉ Ξ· Ξ΄Ξ·ΞΌΞΏΟ†ΞΉΞ»Ξ―Ξ± Ο„ΞΏΟ… (popularity) ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ®ΞΈΞ·ΞΊΞµ ΞΊΞ±Ο„Ξ¬ -10% Ξ­Ο‰Ο‚ +10% Ο€ΞΏΟƒΞΏΟƒΟ„ΞΉΞ±Ξ―Ξ± */
 void Player::communicate(){
     float num = ((0.1 + 0.1 )*(double)rand()/RAND_MAX - 0.1);
     popularity = (1.0 + num) * popularity;
 }
 
- /*  Όταν καλείται η συνάρτηση chooseSleepOrWork() σημαίνει πως ο παίκτης έκανε μία τυχάια επιλογή είτε να κοιμηθεί είτε να εξασκηθεί. Αν κοιμήθηκε τότε καλειται η συνάρτηση sleep()
-     και μηδενιζει την κούραση του παίκτη ενώ αν εξασκείθηκε αυξάνεται η τεχνική του κατάρτηση κατά 5 μονάδες απόλυτα*/
+ /*  ΞΟ„Ξ±Ξ½ ΞΊΞ±Ξ»ΞµΞ―Ο„Ξ±ΞΉ Ξ· ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ· chooseSleepOrWork() ΟƒΞ·ΞΌΞ±Ξ―Ξ½ΞµΞΉ Ο€Ο‰Ο‚ ΞΏ Ο€Ξ±Ξ―ΞΊΟ„Ξ·Ο‚ Ξ­ΞΊΞ±Ξ½Ξµ ΞΌΞ―Ξ± Ο„Ο…Ο‡Ξ¬ΞΉΞ± ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® ΞµΞ―Ο„Ξµ Ξ½Ξ± ΞΊΞΏΞΉΞΌΞ·ΞΈΞµΞ― ΞµΞ―Ο„Ξµ Ξ½Ξ± ΞµΞΎΞ±ΟƒΞΊΞ·ΞΈΞµΞ―. Ξ‘Ξ½ ΞΊΞΏΞΉΞΌΞ®ΞΈΞ·ΞΊΞµ Ο„ΟΟ„Ξµ ΞΊΞ±Ξ»ΞµΞΉΟ„Ξ±ΞΉ Ξ· ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ· sleep()
+     ΞΊΞ±ΞΉ ΞΌΞ·Ξ΄ΞµΞ½ΞΉΞ¶ΞµΞΉ Ο„Ξ·Ξ½ ΞΊΞΏΟΟΞ±ΟƒΞ· Ο„ΞΏΟ… Ο€Ξ±Ξ―ΞΊΟ„Ξ· ΞµΞ½Ο Ξ±Ξ½ ΞµΞΎΞ±ΟƒΞΊΞµΞ―ΞΈΞ·ΞΊΞµ Ξ±Ο…ΞΎΞ¬Ξ½ΞµΟ„Ξ±ΞΉ Ξ· Ο„ΞµΟ‡Ξ½ΞΉΞΊΞ® Ο„ΞΏΟ… ΞΊΞ±Ο„Ξ¬ΟΟ„Ξ·ΟƒΞ· ΞΊΞ±Ο„Ξ¬ 5 ΞΌΞΏΞ½Ξ¬Ξ΄ΞµΟ‚ Ξ±Ο€ΟΞ»Ο…Ο„Ξ±*/
 void Player::chooseSleepOrWork(){
     int choice=rand()%2;
     if(choice==0){
@@ -70,94 +70,94 @@ void Player::chooseSleepOrWork(){
     }
 }
 
-/* Όταν καλείται η συνάρτηση participateInContest() σημαίνει πως ο παίκτης συμμετείχε σε διαγωνισμό. Η συνάρτηση αυξάνει την κούραση του παίκτη κατα ένα τυχαίο
-   ποσοστό μεταξύ του 10 και 20% ποσοστιαία */
+/* ΞΟ„Ξ±Ξ½ ΞΊΞ±Ξ»ΞµΞ―Ο„Ξ±ΞΉ Ξ· ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ· participateInContest() ΟƒΞ·ΞΌΞ±Ξ―Ξ½ΞµΞΉ Ο€Ο‰Ο‚ ΞΏ Ο€Ξ±Ξ―ΞΊΟ„Ξ·Ο‚ ΟƒΟ…ΞΌΞΌΞµΟ„ΞµΞ―Ο‡Ξµ ΟƒΞµ Ξ΄ΞΉΞ±Ξ³Ο‰Ξ½ΞΉΟƒΞΌΟ. Ξ— ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ· Ξ±Ο…ΞΎΞ¬Ξ½ΞµΞΉ Ο„Ξ·Ξ½ ΞΊΞΏΟΟΞ±ΟƒΞ· Ο„ΞΏΟ… Ο€Ξ±Ξ―ΞΊΟ„Ξ· ΞΊΞ±Ο„Ξ± Ξ­Ξ½Ξ± Ο„Ο…Ο‡Ξ±Ξ―ΞΏ
+   Ο€ΞΏΟƒΞΏΟƒΟ„Ο ΞΌΞµΟ„Ξ±ΞΎΟ Ο„ΞΏΟ… 10 ΞΊΞ±ΞΉ 20% Ο€ΞΏΟƒΞΏΟƒΟ„ΞΉΞ±Ξ―Ξ± */
 void Player::participateInContest(){
     cout<<"O paiktis simmetixe se diagonismo kai kourastike"<<endl;
      float num=((0.2 - 0.1 )*(double)rand()/RAND_MAX + 0.1);
      exhaustion= (1.0+num)*exhaustion;
 }
 
-// Setter της μεταβλητής name με όρισμα τύπου string
+// Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ name ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± Ο„ΟΟ€ΞΏΟ… string
 void Player::setName(string a){
      name=a;
 }
 
-// Setter της μεταβλητής gender με όρισμα τύπου string
+// Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ gender ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± Ο„ΟΟ€ΞΏΟ… string
 void Player::setGender(string b){
      gender=b;
 }
 
-// Setter της μεταβλητής age με όρισμα τύπου ακέραιο
+// Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ age ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± Ο„ΟΟ€ΞΏΟ… Ξ±ΞΊΞ­ΟΞ±ΞΉΞΏ
 void Player::setAge(int c){
      age=c;
 }
 
-// Setter της μεταβλητής job με όρισμα τύπου string
+// Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ job ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± Ο„ΟΟ€ΞΏΟ… string
 void Player::setJob(string d){
      job=d;
 }
-// Setter της μεταβλητής technicalTraining με όρισμα τύπου float
+// Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ technicalTraining ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± Ο„ΟΟ€ΞΏΟ… float
 void Player::setTechnicalTraining(float e){
      technicalTraining=e;
 }
 
-// Setter της μεταβλητής exhaustion με όρισμα τύπου float
+// Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ exhaustion ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± Ο„ΟΟ€ΞΏΟ… float
 void Player::setExhaustion(float f){
      exhaustion=f;
 }
 
-// Setter της μεταβλητής popularity με όρισμα τύπου float
+// Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ popularity ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± Ο„ΟΟ€ΞΏΟ… float
 void Player::setPopularity(float g){
      popularity=g;
 }
 
-// Setter της μεταβλητής wins με όρισμα τύπου ακέραιο
+// Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ wins ΞΌΞµ ΟΟΞΉΟƒΞΌΞ± Ο„ΟΟ€ΞΏΟ… Ξ±ΞΊΞ­ΟΞ±ΞΉΞΏ
 void Player::setWins(int h){
      wins=h;
 }
 
-// Getter της μεταβλητής name
+// Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ name
 string Player::getName(){
      return name;
 }
 
-// Getter της μεταβλητής gender
+// Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ gender
 string Player::getGender(){
       return gender;
 }
 
-// Getter της μεταβλητής age
+// Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ age
 int Player::getAge(){
     return age;
 }
 
-// Getter της μεταβλητής job
+// Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ job
 string Player::getJob(){
     return job;
 }
 
-// Getter της μεταβλητής technicalTraining
+// Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ technicalTraining
 float Player::getTechnicalTraining(){
      return technicalTraining;
 }
 
-// Getter της μεταβλητής exhaustion
+// Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ exhaustion
 float Player::getExhaustion(){
      return exhaustion;
 }
 
-// Getter της μεταβλητής popularity
+// Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ popularity
 float Player::getPopularity(){
      return popularity;
 }
 
-// Getter της μεταβλητής wins
+// Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ wins
 int Player::getWins(){
      return wins;
 }
 
-/* Η συνάρτηση showPlayer() εκτυπώνει τα στοιχεία της κλάσης του παίκτη. */
+/* Ξ— ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ· showPlayer() ΞµΞΊΟ„Ο…Ο€ΟΞ½ΞµΞΉ Ο„Ξ± ΟƒΟ„ΞΏΞΉΟ‡ΞµΞ―Ξ± Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Ο„ΞΏΟ… Ο€Ξ±Ξ―ΞΊΟ„Ξ·. */
 void Player::showPlayer(){
     cout<<"Player:"<<endl;
     cout<<"Name: "<<name<<endl;

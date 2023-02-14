@@ -1,55 +1,55 @@
 
 
 
-/*   Βέλλιος Γεώργιος-Σεραφείμ ΑΕΜ: 9471 velliosg@ece.auth.gr  -- Μανούσος Διαγόρας ΑΕΜ: 9554 dmanouso@ece.auth.gr  */
+/*   Ξ’Ξ­Ξ»Ξ»ΞΉΞΏΟ‚ Ξ“ΞµΟΟΞ³ΞΉΞΏΟ‚-Ξ£ΞµΟΞ±Ο†ΞµΞ―ΞΌ Ξ‘Ξ•Ξ: 9471 velliosg@ece.auth.gr  -- ΞΞ±Ξ½ΞΏΟΟƒΞΏΟ‚ Ξ”ΞΉΞ±Ξ³ΟΟΞ±Ο‚ Ξ‘Ξ•Ξ: 9554 dmanouso@ece.auth.gr  */
 
 #include "CreativityCompetition.h"
 
 using namespace std;
 
-/* Γίνεται αρχικοποίηση των τιμών του στατικού πίνακα ingredients που είναι κοινός για όλα τα αντικείμενα της κλάσης. */
+/* Ξ“Ξ―Ξ½ΞµΟ„Ξ±ΞΉ Ξ±ΟΟ‡ΞΉΞΊΞΏΟ€ΞΏΞ―Ξ·ΟƒΞ· Ο„Ο‰Ξ½ Ο„ΞΉΞΌΟΞ½ Ο„ΞΏΟ… ΟƒΟ„Ξ±Ο„ΞΉΞΊΞΏΟ Ο€Ξ―Ξ½Ξ±ΞΊΞ± ingredients Ο€ΞΏΟ… ΞµΞ―Ξ½Ξ±ΞΉ ΞΊΞΏΞΉΞ½ΟΟ‚ Ξ³ΞΉΞ± ΟΞ»Ξ± Ο„Ξ± Ξ±Ξ½Ο„ΞΉΞΊΞµΞ―ΞΌΞµΞ½Ξ± Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚. */
 string CreativityCompetition:: ingredients[10]={"patates", "ntomata", "mosxari", "kri8araki", "kimino", "piperia", "solomos", "fakes", "sokolata", "kerasi"};
 
 
-/* Constructor της κλάσης CreativityCompetition.Δεν έχει κάποια εντολή,διότι πραγματοποιούνται οι εντολες του constructor χωρίς ορίσματα της κλάσης Competition
- και του constructor χωρίς ορίσματα της κλάσης ExcursionAward που αρχεικοποιεί την μεταβλητή excursionAward με default ορίσματα*/
+/* Constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ CreativityCompetition.Ξ”ΞµΞ½ Ξ­Ο‡ΞµΞΉ ΞΊΞ¬Ο€ΞΏΞΉΞ± ΞµΞ½Ο„ΞΏΞ»Ξ®,Ξ΄ΞΉΟΟ„ΞΉ Ο€ΟΞ±Ξ³ΞΌΞ±Ο„ΞΏΟ€ΞΏΞΉΞΏΟΞ½Ο„Ξ±ΞΉ ΞΏΞΉ ΞµΞ½Ο„ΞΏΞ»ΞµΟ‚ Ο„ΞΏΟ… constructor Ο‡Ο‰ΟΞ―Ο‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Competition
+ ΞΊΞ±ΞΉ Ο„ΞΏΟ… constructor Ο‡Ο‰ΟΞ―Ο‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ ExcursionAward Ο€ΞΏΟ… Ξ±ΟΟ‡ΞµΞΉΞΊΞΏΟ€ΞΏΞΉΞµΞ― Ο„Ξ·Ξ½ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ® excursionAward ΞΌΞµ default ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±*/
 CreativityCompetition::CreativityCompetition(){
     ;
 }
 
 
-/* Constructor της κλάσης CreativityCompetition με ορίσματα int arithmos, string onoma, ExcursionAward excursionAward.Τα δυο πρώτα ορίσματα χρησιμοποιούνται
- και ως ορίσματα του constructor της κλάσης Competition που καλείται απο τον παρόντα constructor.Η τιμή του τρίτου ορίσματος αποδίδεται στη
- μεταβλητή excursionAward.(γίνεται χρήση του this->excursionAward που λεει οτι τοποθετούμε το τρίτο ορισμα στη μεταβλητη excursionAward της κλάσης)*/
+/* Constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ CreativityCompetition ΞΌΞµ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± int arithmos, string onoma, ExcursionAward excursionAward.Ξ¤Ξ± Ξ΄Ο…ΞΏ Ο€ΟΟΟ„Ξ± ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο‡ΟΞ·ΟƒΞΉΞΌΞΏΟ€ΞΏΞΉΞΏΟΞ½Ο„Ξ±ΞΉ
+ ΞΊΞ±ΞΉ Ο‰Ο‚ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο„ΞΏΟ… constructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ Competition Ο€ΞΏΟ… ΞΊΞ±Ξ»ΞµΞ―Ο„Ξ±ΞΉ Ξ±Ο€ΞΏ Ο„ΞΏΞ½ Ο€Ξ±ΟΟΞ½Ο„Ξ± constructor.Ξ— Ο„ΞΉΞΌΞ® Ο„ΞΏΟ… Ο„ΟΞ―Ο„ΞΏΟ… ΞΏΟΞ―ΟƒΞΌΞ±Ο„ΞΏΟ‚ Ξ±Ο€ΞΏΞ΄Ξ―Ξ΄ΞµΟ„Ξ±ΞΉ ΟƒΟ„Ξ·
+ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ® excursionAward.(Ξ³Ξ―Ξ½ΞµΟ„Ξ±ΞΉ Ο‡ΟΞ®ΟƒΞ· Ο„ΞΏΟ… this->excursionAward Ο€ΞΏΟ… Ξ»ΞµΞµΞΉ ΞΏΟ„ΞΉ Ο„ΞΏΟ€ΞΏΞΈΞµΟ„ΞΏΟΞΌΞµ Ο„ΞΏ Ο„ΟΞ―Ο„ΞΏ ΞΏΟΞΉΟƒΞΌΞ± ΟƒΟ„Ξ· ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ· excursionAward Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚)*/
 CreativityCompetition::CreativityCompetition(int arithmos, string onoma, ExcursionAward excursionAward): Competition(arithmos, onoma){
     this->excursionAward = excursionAward;
 }
 
 
-/* Destructor της κλάσης CreativityCompetition*/
+/* Destructor Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚ CreativityCompetition*/
 CreativityCompetition::~CreativityCompetition(){
     ;
 }
 
-/*Setter της μεταβλητής ingredients[10].Δέχεται δυο ορίσματα, 1 int position,το οποίο είναι η θέση του πίνακα, όπου τοποθετείται το δεύτερο
-όρισμα string s.*/
+/*Setter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ ingredients[10].Ξ”Ξ­Ο‡ΞµΟ„Ξ±ΞΉ Ξ΄Ο…ΞΏ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±, 1 int position,Ο„ΞΏ ΞΏΟ€ΞΏΞ―ΞΏ ΞµΞ―Ξ½Ξ±ΞΉ Ξ· ΞΈΞ­ΟƒΞ· Ο„ΞΏΟ… Ο€Ξ―Ξ½Ξ±ΞΊΞ±, ΟΟ€ΞΏΟ… Ο„ΞΏΟ€ΞΏΞΈΞµΟ„ΞµΞ―Ο„Ξ±ΞΉ Ο„ΞΏ Ξ΄ΞµΟΟ„ΞµΟΞΏ
+ΟΟΞΉΟƒΞΌΞ± string s.*/
 void CreativityCompetition::setIngredients(int position,string s){
     ingredients[position]=s;
 
 }
 
-/*Getter της μεταβλητής ingredients[10]. Επιστρέφει δείκτη στο πρώτο στοιχείο του πίνακα ingredients.*/
+/*Getter Ο„Ξ·Ο‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ®Ο‚ ingredients[10]. Ξ•Ο€ΞΉΟƒΟ„ΟΞ­Ο†ΞµΞΉ Ξ΄ΞµΞ―ΞΊΟ„Ξ· ΟƒΟ„ΞΏ Ο€ΟΟΟ„ΞΏ ΟƒΟ„ΞΏΞΉΟ‡ΞµΞ―ΞΏ Ο„ΞΏΟ… Ο€Ξ―Ξ½Ξ±ΞΊΞ± ingredients.*/
 string* CreativityCompetition::getIngredients(){
     return ingredients;
 }
 
-/*Εκτυπώνει τις μεταβλητές της κλάσης.Για να γίνει αυτό,καλούνται οι συναρτήσεις status() των κλάσεων Competition και excursionAward.  */
+/*Ξ•ΞΊΟ„Ο…Ο€ΟΞ½ΞµΞΉ Ο„ΞΉΟ‚ ΞΌΞµΟ„Ξ±Ξ²Ξ»Ξ·Ο„Ξ­Ο‚ Ο„Ξ·Ο‚ ΞΊΞ»Ξ¬ΟƒΞ·Ο‚.Ξ“ΞΉΞ± Ξ½Ξ± Ξ³Ξ―Ξ½ΞµΞΉ Ξ±Ο…Ο„Ο,ΞΊΞ±Ξ»ΞΏΟΞ½Ο„Ξ±ΞΉ ΞΏΞΉ ΟƒΟ…Ξ½Ξ±ΟΟ„Ξ®ΟƒΞµΞΉΟ‚ status() Ο„Ο‰Ξ½ ΞΊΞ»Ξ¬ΟƒΞµΟ‰Ξ½ Competition ΞΊΞ±ΞΉ excursionAward.  */
 void CreativityCompetition::status(){
         Competition::status();
         excursionAward.status();
 }
 
-/*Ο τρόπος λειτουργίας της συνάρτησης compete() θα παρουσιαστεί στην αναφορά */
+/*Ξ Ο„ΟΟΟ€ΞΏΟ‚ Ξ»ΞµΞΉΟ„ΞΏΟ…ΟΞ³Ξ―Ξ±Ο‚ Ο„Ξ·Ο‚ ΟƒΟ…Ξ½Ξ¬ΟΟ„Ξ·ΟƒΞ·Ο‚ compete() ΞΈΞ± Ο€Ξ±ΟΞΏΟ…ΟƒΞΉΞ±ΟƒΟ„ΞµΞ― ΟƒΟ„Ξ·Ξ½ Ξ±Ξ½Ξ±Ο†ΞΏΟΞ¬ */
 void CreativityCompetition::compete(Team &team1, Team &team2){
     float maxTechnique= -1, technique, temp;
     int maxIndex= -1;
